@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Ticket4U</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iKt6qtz1Xn+485v9d9IuQdfy4xL/8/txIWXPaQSmUjDQbO2+x/EUO/lJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+<div th:replace="fragments/Navbar :: navigation"></div>
+
+<div class="home-img">
+  <div class="banner-content">
+    <h1>Welcome to Ticket4U</h1>
+    <p>Your Gateway to Exciting Events and Entertainment!</p>
+    <a href="#explore" class="explore-btn">Explore More</a>
+  </div>
+</div>
+
+<div class="section review swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            "Attending events through Ticket Fusion has been a breeze. Easy
+            booking, great seats, and amazing experiences!"
+          </p>
+          <p class="card-text"><small class="text-muted">~ Olivia Doe</small></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            "I've used Ticket Fusion for multiple events and it never
+            disappoints. Highly recommended!"
+          </p>
+          <p class="card-text"><small class="text-muted">~ Pamela Smith</small></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more swiper-slide divs for additional reviews -->
+
+  </div>
+</div>
+<div class="section">
+      <h2>Upcoming Events</h2>
+      <p>Explore the latest and most exciting events happening near you.</p>
+
+      <section class="upcoming-event event-container">
+        <div class="event-section">
+          <img src="images/eventimg-1.jpg" alt="event-1" class="event-img" />
+
+          <span class="event-title">DJ Night</span>
+
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+
+        <div class="event-section">
+          <img src="images/eventimg-2.jpg" alt="event-2" class="event-img" />
+
+          <span class="event-title">Dance Night</span>
+
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+
+        <div class="event-section">
+          <img src="images/eventimg-3.jpg" alt="event-3" class="event-img" />
+
+          <span class="event-title">Flash Mob</span>
+
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+
+        <div class="event-section">
+          <img src="images/eventimg-4.jpg" alt="event-4" class="event-img" />
+
+          <span class="event-title">Luminous Nightlights</span>
+
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+
+        <div class="event-section">
+          <img src="images/eventimg-5.jpg" alt="event-5" class="event-img" />
+
+          <span class="event-title">Conference</span>
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+
+        <div class="event-section">
+          <img src="images/eventimg-6.jpg" alt="event-6" class="event-img" />
+
+          <span class="event-title">Fair Fiesta</span>
+          <div class="book-btn">
+            <a href="/login">Book Now</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or need assistance, feel free to reach out to
+        us.
+      </p>
+      <p>Email: <a href="Ticket4U@gmail.com">Ticket4U</a></p>
+      <p>Phone: <a href="tel:62 811-1152-129">+62 811-1152-129</a></p>
+      <p>
+        <input
+                type="text"
+                placeholder="Enter your email address"
+                class="contact-input"
+        /><a>Subscribe</a>
+      </p>
+    </div>
+
+    <div th:replace="fragments/Footer :: footer"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-GLhlTQ8iKt6qtz1Xn+485v9d9IuQdfy4xL/8/txIWXPaQSmUjDQbO2+x/EUO/lJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOQTeVAhXFOXT8I0hj9J2W5RdknK8kgd" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+    </body>
+    </html>
+

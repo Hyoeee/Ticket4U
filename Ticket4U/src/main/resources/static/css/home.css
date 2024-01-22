@@ -1,0 +1,251 @@
+:root {
+  --main-color: #131720;
+  --background-color: #000;
+  --text-color: #fff;
+  --dark-overlay: rgba(0, 0, 0, 0.5); /* Ubah opasitas sesuai kebutuhan */
+}
+
+.home-img {
+  background: linear-gradient(var(--dark-overlay), var(--dark-overlay)), url("/images/cover-img.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 70vh;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Pindahkan ke tengah kiri */
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+.banner-content p {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #131720;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background-color: #131720;
+}
+
+
+.home-img img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Atur lebar maksimum sesuai keinginan Anda */
+  border-radius: 15px; /* Menyesuaikan sudut yang melengkung */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan jika diinginkan */
+}
+
+.home-img p {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .review{
+    background-color: #131720;
+    color: #fff;
+  }
+  
+  .section .review h2{
+      color: #000;
+    }
+  
+  .section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .section .upcoming-event a {
+    text-decoration: none;
+  }
+  
+  .section .upcoming-event img {
+    width: 100%;
+  }
+  
+  .upcoming-event  {
+    padding: 3rem 0 2rem;
+  }
+  
+  .event-container {
+    max-width: 850px;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .upcoming-event {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .event-section {
+    background: #000; 
+    padding: 15px;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .event-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+  }
+  
+  .event-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0px;
+  }
+  
+  .book-btn {
+      margin:20px 0;
+  }
+  
+  .book-btn a {
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 15px;
+      background-color: #131720;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .book-btn a:hover {
+      background-color: #fff;
+      color: #131720;
+  }
+  
+  .contact-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .contact-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .contact-section p a {
+      text-decoration: none;
+      color: #fff;
+    }
+  
+  .contact-section p a:hover {
+      text-decoration: underline;
+      color: #131720;
+    }
+
+.card {
+  border-radius: 15px;
+  border: 2px solid #131720;
+  margin: 10px;
+}
+
+.card-img-top {
+  width: 70px; /* Sesuaikan lebar gambar profil sesuai keinginan Anda */
+  height: 70px; /* Sesuaikan tinggi gambar profil sesuai keinginan Anda */
+  margin: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Swiper Styles */
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 18px;
+  background-color: #131720;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #131720;
+}
